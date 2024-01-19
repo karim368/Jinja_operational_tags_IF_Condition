@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF Condition</title>
+    <style>
+        body
+        {
+            background-color: khaki;
+        }
+        .a
+        {
+            background-color: aqua;
+            color: red;
+        }
+        h1
+        {
+            background-color: blueviolet;
+            color: red;
+        }
+        #h
+        {
+            background-color: red;
+            color: whitesmoke;
+        }
+        #sh
+        {
+            background-color: blue;
+            color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1 id="h">Printing By using JINJA Operational Tag</h1>
+        <h1 id="sh">IF ELSE Condition</h1>
+        <div class="a">
+            <h2>Here a value is {{a}},and b value is {{b}}</h2>
+                {% if a > b %}
+                    <h2>{{a}} is maximum</h2>
+                {% else %}
+                    <h2>{{b}} is maximum</h2>
+                {% endif %}
+        </div>
+        <h1 id="sh">IF ELIF Condition</h1>
+        <div class="a">
+            <h2>Here a value is {{a}},b value is {{b}} and c value is {{c}}</h2>
+            {% if a > b %}
+                <h2>{{a}} is maximum</h2>
+            {% elif b > c %}
+                <h2>{{b}} is maximum</h2>
+            {% else %}
+                <h2>{{c}} is maximum</h2>
+            {% endif %}
+        </div>
+        
+    </center>
+</body>
+</html>
